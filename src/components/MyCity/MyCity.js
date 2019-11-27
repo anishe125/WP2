@@ -4,6 +4,7 @@ import { locRequested } from "../../actions";
 import Spinner from "react-bootstrap/Spinner";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 const MyCity = ({ city, loading, locRequested, errorMessage }) => {
@@ -22,17 +23,18 @@ const MyCity = ({ city, loading, locRequested, errorMessage }) => {
           </div>
           {city.error
             ? <div>{city.error}</div>
-            : <div>
+            : <Row>
+                <Col sm={6}>
+                  <Row>
+                    <div class="display-3">{city.city}</div>
+                  </Row>
 
-                <div class="display-3">{city.city}</div>
-
-
-              <Row >
-                <img width={140} src={`http://openweathermap.org/img/wn/${city.icon}@2x.png`} alt=""/>
-                <div style={{ marginBottom: 20, marginLeft: 140 }} className="display-2">{`${city.temp}°`}</div>
-              </Row>
-
-
+                      <Row >
+                        <Col sm={3}><img width={140} src={`http://openweathermap.org/img/wn/${city.icon}@2x.png`} alt=""/></Col>
+                        <Col sm={3}><div style={{ marginBottom: 20, marginLeft: 140 , marginRight: 300}} className="display-2">{`${city.temp}°`}</div></Col>
+                      </Row>
+                    </Col>
+                  <Col sm={6}>
                 <table class="table">
                   <tr>
                     <td>Pressure:</td>
@@ -51,8 +53,8 @@ const MyCity = ({ city, loading, locRequested, errorMessage }) => {
                     <td align={"right"}>[{city.lat}, {city.lon}]</td>
                   </tr>
                 </table>
-
-            </div>
+                </Col>
+            </Row>
           }
         </div>
       }
