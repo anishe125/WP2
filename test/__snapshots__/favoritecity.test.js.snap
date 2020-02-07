@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="d-flex flex-row align-items-center"
+  >
+    <FavoriteCityHeader
+      data={
+        Object {
+          "iconLink": "a",
+          "name": "a",
+          "temp": "a",
+        }
+      }
+      download={false}
+      error={false}
+      name="a"
+    />
+    <div
+      className="ml-auto"
+    >
+      <Button
+        active={false}
+        className="btn btn-circle btn-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        X
+      </Button>
+    </div>
+  </div>
+  <CityInfo
+    data={
+      Object {
+        "clouds": "a",
+        "humidity": "a",
+        "pressure": "a",
+        "wind": "a",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`renders correctly 2`] = `
+<div>
+  <div
+    className="d-flex flex-row align-items-center"
+  >
+    <FavoriteCityHeader
+      download={true}
+      error={true}
+    />
+    <div
+      className="ml-auto"
+    >
+      <Button
+        active={false}
+        className="btn btn-circle btn-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        X
+      </Button>
+    </div>
+  </div>
+  <div
+    className="title-sm text-secondary ml-5"
+  >
+    Ой...
+  </div>
+</div>
+`;
+
+exports[`renders correctly 3`] = `
+<div>
+  <div
+    className="d-flex flex-row align-items-center"
+  >
+    <FavoriteCityHeader
+      download={true}
+      error={false}
+    />
+    <div
+      className="ml-auto"
+    >
+      <Button
+        active={false}
+        className="btn btn-circle btn-secondary"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+        variant="primary"
+      >
+        X
+      </Button>
+    </div>
+  </div>
+  <Spinner
+    animation="border"
+    role="status"
+  >
+    <span
+      className="sr-only"
+    >
+      Loading...
+    </span>
+  </Spinner>
+</div>
+`;

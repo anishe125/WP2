@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <table
+    className="table"
+  >
+    <tr>
+      <td>
+        Pressure:
+      </td>
+      <td
+        align="right"
+      >
+        a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Wind:
+      </td>
+      <td
+        align="right"
+      >
+        a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Humidity:
+      </td>
+      <td
+        align="right"
+      >
+        a
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Coordinates:
+      </td>
+      <td
+        align="right"
+      >
+        [
+        ]
+      </td>
+    </tr>
+  </table>
+</div>
+`;

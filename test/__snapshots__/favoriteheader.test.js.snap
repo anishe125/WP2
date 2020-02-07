@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="row"
+  onSubmit={[Function]}
+>
+  <div
+    className="display-3 col-6"
+  >
+    Избранное
+  </div>
+  <div
+    className="col d-flex"
+  >
+    <input
+      className="form-control mt-auto"
+      onChange={[Function]}
+      placeholder="Добавить новый город"
+      value=""
+    />
+  </div>
+  <div
+    className="d-flex"
+  >
+    <Button
+      active={false}
+      className="btn btn-circle btn-secondary mt-auto"
+      disabled={false}
+      type="submit"
+      variant="primary"
+    >
+      +
+    </Button>
+  </div>
+</form>
+`;

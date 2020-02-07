@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Spinner
+  animation="border"
+  role="status"
+>
+  <span
+    className="sr-only"
+  >
+    Loading...
+  </span>
+</Spinner>
+`;
+
+exports[`renders correctly 2`] = `
+<Spinner
+  animation="border"
+  role="status"
+>
+  <span
+    className="sr-only"
+  >
+    Loading...
+  </span>
+</Spinner>
+`;
+
+exports[`renders correctly 3`] = `
+<Spinner
+  animation="border"
+  role="status"
+>
+  <span
+    className="sr-only"
+  >
+    Loading...
+  </span>
+</Spinner>
+`;
